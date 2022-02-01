@@ -1,58 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+    <!-- /.website title -->
+    <title>Great Football</title>
+    <link rel="shortcut icon" href="images/great_football_icon_round.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+          charset="UTF-8">
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    <!-- CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
+    <link href="css/styles.css" rel="stylesheet" media="screen">
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,700' rel='stylesheet' type='text/css'>
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="great_football">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>Great Football</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '475408700';
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body>
-  <script>
-    window.addEventListener('load', function(ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        }
-      }).then(function(engineInitializer) {
-        return engineInitializer.initializeEngine();
-      }).then(function(appRunner) {
-        return appRunner.runApp();
-      });
+
+<body data-spy="scroll" data-target="#navbar-scroll">
+
+<div id="top"></div>
+
+<!-- NAVIGATION -->
+<div id="menu">
+    <nav class="navbar-wrapper navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-themers">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="site-name" href="#top"><img src="images/great_football_icon_round.png" alt="logo"></a>
+            </div>
+
+            <div id="navbar-scroll" class="collapse navbar-collapse navbar-themers navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="#intro">About</a></li>
+                    <li><a href="#screenshot">Screenshots</a></li>
+                    <li><a href="#download">Download</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- /.parallax full screen background image -->
+<div class="fullscreen landing parallax banner" style="background-color: rgb(40, 180, 99)" data-img-width="2000"
+     data-img-height="1325" data-diff="100">
+
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-6">
+
+                    <!-- /.main title -->
+                    <h1 class="wow fadeInLeft">
+                        Great Football App
+                    </h1>
+
+                    <!-- /.header paragraph -->
+                    <div class="landing-text wow fadeInLeft">
+                        <p>👀 Never miss a match! Keep an eye on the football competition, get the latest information and
+                            spill the tea on time! In the Great Football APP, you can follow your favourite teams and
+                            players, get live scores and results of football events around the world!</p>
+                    </div>
+
+                    <!-- /.header button -->
+                    <div class="head-btn wow fadeInLeft">
+                        <a href="#" class="btn-primary app-store">
+                            <i class="fa fa-apple"></i>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.xiyun.great_football"
+                           class="btn-primary play-market">
+                            <i class="fa fa-android"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /.intro section -->
+<div id="intro">
+    <div class="container">
+        <div class="row">
+
+            <!-- /.feature image -->
+            <div class="col-md-6 feature-2-pic wow fadeInLeft">
+                <img src="images/great_football_icon_round.png" alt="image" class="img-responsive">
+            </div>
+
+            <!-- /.feature content -->
+            <div class="col-md-6 wow fadeInRight">
+                <h2>⚽ IT'S ALL ABOUT FOOTBALL</h2>
+                <p>- Leagues<br>
+                    - Match Information Overview<br>
+                    - Detailed Match Data<br>
+                    - Live Match Update<br>
+                    - History Match Preview<br>
+                    - All Matches Tables and Standings<br>
+                    - Detailed information about players' ability<br>
+                    - Transfer Market<br>
+                    - AND MORE!<br>
+                </p>
+
+                <div class="btn-section"><a href="#download" class="btn-default">Download Now</a></div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- /.screenshot section -->
+<div id="screenshot">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="wow fadeInLeft">Screenshots</h2>
+            <div class="title-line wow fadeInRight"></div>
+        </div>
+        <div class="row screenshots">
+
+            <div id="screenshots" class="owl-carousel">
+
+                <!-- /.screenshot images -->
+                <div class="screen wow fadeInUp">
+                    <a href="images/screenshot0.png" data-toggle="lightbox"><img src="images/screenshot0.png"
+                                                                                 alt="Screenshot"></a>
+                </div>
+
+                <div class="screen wow fadeInUp" data-wow-delay="0.1s">
+                    <a href="images/screenshot2.png" data-toggle="lightbox"><img src="images/screenshot2.png"
+                                                                                 alt="Screenshot"></a>
+                </div>
+
+                <div class="screen wow fadeInUp" data-wow-delay="0.2s">
+                    <a href="images/screenshot3.png" data-toggle="lightbox"><img src="images/screenshot3.png"
+                                                                                 alt="Screenshot"></a>
+                </div>
+
+                <div class="screen wow fadeInUp" data-wow-delay="0.3s">
+                    <a href="images/screenshot4.png" data-toggle="lightbox"><img src="images/screenshot4.png"
+                                                                                 alt="Screenshot"></a>
+                </div>
+
+                <div class="screen wow fadeInUp" data-wow-delay="0.4s">
+                    <a href="images/screenshot5.png" data-toggle="lightbox"><img src="images/screenshot5.png"
+                                                                                 alt="Screenshot"></a>
+                </div>
+
+                <div class="screen wow fadeInUp" data-wow-delay="0.5s">
+                    <a href="images/screenshot6.png" data-toggle="lightbox"><img src="images/screenshot6.png"
+                                                                                 alt="Screenshot"></a>
+                </div>
+
+                <div class="screen wow fadeInUp" data-wow-delay="0.6s">
+                    <a href="images/screenshot7.png" data-toggle="lightbox"><img src="images/screenshot7.png"
+                                                                                 alt="Screenshot"></a>
+                </div>
+
+                <div class="screen wow fadeInUp" data-wow-delay="0.7s">
+                    <a href="images/screenshot8.png" data-toggle="lightbox"><img src="images/screenshot8.png"
+                                                                                 alt="Screenshot"></a>
+                </div>
+
+                <div class="screen wow fadeInUp" data-wow-delay="0.8s">
+                    <a href="images/screenshot9.png" data-toggle="lightbox"><img src="images/screenshot9.png"
+                                                                                 alt="Screenshot"></a>
+                </div>
+
+                <div class="screen wow fadeInUp" data-wow-delay="0.9s">
+                    <a href="images/screenshot10.png" data-toggle="lightbox"><img src="images/screenshot10.png"
+                                                                                  alt="Screenshot"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /.download section -->
+<div id="download">
+    <div class="action fullscreen parallax" data-img-width="2000"
+         data-img-height="1334" data-diff="100">
+        <div class="overlay downloadSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
+                        <h2 class="wow fadeInLeft">Get Your Great Football App Today!</h2>
+                        <p class="download-text wow fadeInRight">We provide multi-platform support. You can always find
+                            the platform which your device is running.</p>
+                        <div class="btn-section">
+
+                            <a href="#" class="btn-primary app-store">
+                                <i class="fa fa-apple"></i>
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.xiyun.great_football"
+                               class="btn-primary play-market">
+                                <i class="fa fa-android"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /.contact section -->
+<div id="contact">
+    <div class="contact">
+
+        <div class="container">
+            <div class="row contact-row">
+
+                <!-- /.address and contact -->
+                <div class="col-sm-5 contact-left wow fadeInUp">
+                    <h2>Contact Us</h2>
+                    <ul class="ul-address">
+                        <li><a href="mailto:greatfootballofficial@gmail.com">greatfootballofficial@gmail.com</a></li>
+                        <li><a href="https://great-football.github.io">https://great-football.github.io</a></li>
+                    </ul>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /.footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="col-sm-4 col-sm-offset-4">
+            <!-- /.social links -->
+            <div class="social text-center">
+                <ul>
+                    <li><a class="wow fadeInUp" href="https://twitter.com/_GreatFootball_"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a class="wow fadeInUp" href="https://www.facebook.com/" data-wow-delay="0.2s"><i
+                            class="fa fa-facebook"></i></a></li>
+                    <li><a class="wow fadeInUp" href="https://instagram.com/" data-wow-delay="0.6s"><i
+                            class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <a href="#" class="scrollToTop"><i class="fa fa-arrow-circle-o-up"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- /.javascript files -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/ekko-lightbox-min.js"></script>
+<script type="text/javascript">
+    $(document).delegate('*[data-toggle="lightbox"]', 'click', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
     });
-  </script>
+</script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>

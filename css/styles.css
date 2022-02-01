@@ -1,0 +1,886 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: #777;
+    background: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    line-height: 1.2em;
+    margin: 0 0 .8em;
+}
+
+h2 {
+    font-size: 1.8em;
+    line-height: 1.4em;
+    margin: 0 0 .8em;
+}
+
+h3 {
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+h4 {
+    font-size: 1.25em;
+    line-height: 1.4em;
+}
+
+h5 {
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+
+h6 {
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    text-decoration: none;
+}
+
+p {
+    padding: 0 0 1em;
+    margin: 0;
+}
+
+a {
+    color: #3EB0F7;
+    outline: 0;
+    font-weight: bold;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3EB0F7;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.banner {
+    position: relative;
+    top: -80px;
+    padding-top: 80px;
+}
+
+.is-sticky .navbar-default {
+    background: transparent;
+    padding: 15px 0;
+}
+
+#menu-sticky-wrapper {
+    z-index: 2;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgb(40, 180, 99);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#menu {
+    z-index: 999;
+}
+
+.navbar-default {
+    background: transparent;
+    padding: 15px 0;
+    border-top: 1px solid transparent;
+    backdrop-filter: blur(19px);
+}
+
+.navbar-default .navbar-brand {
+    padding: 7px;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+    font-weight: 500;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: grey;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background: transparent;
+    color: orange;
+}
+
+.btn-default {
+    font-size: 17px;
+    margin: 30px 10px 10px 0;
+    line-height: 20px;
+    padding: 15px 35px;
+    height: 50px;
+    border: 2px solid rgb(40, 180, 99);
+    background: transparent;
+    transition: all 0.4s;
+    color: #202020;
+    border-radius: 100px;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    border: 2px solid rgb(40, 180, 99);
+    background: rgb(40, 180, 99);
+    color: white;
+}
+
+.btn-primary {
+    font-size: 17px;
+    margin: 30px 10px 10px 0;
+    line-height: 20px;
+    padding: 15px 35px;
+    height: 50px;
+    border: 2px solid #FFFFFF;
+    background: #FFFFFF;
+    transition: all 0.4s;
+    color: rgb(18, 18, 22);
+    border-radius: 100px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    color: #FFFFFF;
+}
+
+.site-name img {
+    width: 45px;
+}
+
+.landing h1 {
+    font-size: 56px;
+    font-weight: 300;
+    color: #fff;
+    margin: 92px 0 20px 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.landing p {
+    color: #fff;
+}
+
+.landing-text {
+    margin-bottom: 20px;
+}
+
+.landing-text p {
+    padding-bottom: 20px;
+}
+
+.more {
+    margin-bottom: 100px;
+}
+
+.more p {
+    font-size: 17px;
+}
+
+.head-btn {
+    margin-bottom: 40px;
+}
+
+.option {
+    text-transform: uppercase;
+    padding: 5px;
+    min-width: 80px;
+    margin-right: 5px;
+    transition: all 0.4s;
+    font-size: 14px;
+    color: #fff;
+}
+
+.option .fa {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.option:hover {
+    color: #F33030;
+}
+
+.header-phone {
+    margin: 65px 0;
+    position: relative;
+    bottom: -65px;
+}
+
+#intro {
+    padding: 0 0 100px;
+}
+
+#intro h2 {
+    font-size: 40px;
+    font-weight: 300;
+    margin: 15px 0 15px 0;
+}
+
+.intro-pic {
+    margin-top: 20px;
+}
+
+.btn-section {
+    padding-top: 20px;
+}
+
+.row-feat {
+    padding-top: 50px;
+}
+
+.feat-list {
+    margin-top: 40px;
+}
+
+.feat-list i {
+    font-size: 48px;
+    float: left;
+    width: 20%;
+    color: #26AFF0;
+    height: 100%;
+    position: relative;
+    opacity: 0.6;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+    top: 10px;
+}
+
+.feat-list:hover i {
+    color: #FAD12C;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+#screenshot {
+    padding-top: 100px;
+}
+
+.title-line {
+    width: 100px;
+    height: 3px;
+    margin: 0 auto;
+    background: #F33030;
+}
+
+.screenshots {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.screenshots .screen {
+    background: #FFFFFF;
+    padding: 10px;
+    margin: 13px;
+    display: block;
+}
+
+.screenshots .screen img {
+    width: 100%;
+    border-radius: 4px;
+    border: solid 3px #dadada;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.screenshots .screen img:hover {
+    border: solid 3px rgb(40, 180, 99);
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.modal-backdrop.in {
+    background-color: #000;
+}
+
+.ekko-lightbox .modal-content {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.ekko-lightbox .modal-header {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.ekko-lightbox .modal-header .close {
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    color: #fff;
+    text-shadow: 0 0;
+    font-weight: 100;
+    margin-top: 5px;
+}
+
+.ekko-lightbox .modal-header .close:hover {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+}
+
+.ekko-lightbox .modal-header h4.modal-title {
+    font-weight: 100;
+    color: #fff;
+    padding: 0;
+}
+
+.ekko-lightbox .modal-body {
+    padding: 0;
+}
+
+.ekko-lightbox .modal-footer {
+    -webkit-opacity: 0.9;
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    border: 0;
+    color: #fff;
+    font-weight: 100;
+    padding: 0;
+}
+
+.ekko-lightbox-nav-overlay a {
+    -webkit-opacity: 0.9;
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    text-shadow: none;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    background: #FAD22C;
+}
+
+.action {
+    color: #fff;
+}
+
+.action h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.download-store {
+    padding: 50px 0 130px;
+}
+
+.download-store li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.appstorebutton {
+    height: 65px;
+    width: 195px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.iphone {
+    background: #F33030;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.iphone:hover {
+    background-color: #1f96e0;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.android {
+    background: #555;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.android:hover {
+    background-color: #444;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+}
+
+.appstorebutton a {
+    color: white;
+    text-decoration: none;
+}
+
+.appstorebutton p {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    color: white;
+    padding: 10px 0 0 65px;
+    line-height: 1;
+}
+
+.appstorebutton p small {
+    font-size: 16px;
+}
+
+.appstorebutton i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px 0 0 17px;
+    font-size: 40px;
+}
+
+#footer {
+    background: #202020;
+    padding: 50px 0 50px;
+    color: #BDBDBD;
+}
+
+.social ul {
+    padding: 0;
+    list-style: none;
+}
+
+.social li {
+    display: inline-block;
+    padding-right: .3em;
+}
+
+.social li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #202020;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.32);
+    border: solid 1px #202020;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+    border-radius: 50%;
+}
+
+.social li a:hover {
+    color: #fff;
+    background: #020E13;
+}
+
+.scrollToTop {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.scrollToTop:hover {
+    color: #FFFFFF;
+}
+
+.control-group .controls {
+    overflow-x: hidden;
+}
+
+.downloadSection {
+    padding: 100px 0;
+}
+
+#package {
+    padding-top: 100px;
+}
+
+.title-line {
+    width: 100px;
+    height: 3px;
+    margin: 0 auto;
+    background: rgb(40, 180, 99);
+}
+
+.package-option {
+    padding: 50px 0 100px;
+}
+
+.package-option ul {
+    padding: 0;
+}
+
+#contact {
+    width: 100%;
+    min-height: 100%;
+}
+
+#contact h2 {
+    color: rgb(8, 24, 31);
+    margin-left: 36px;
+}
+
+.ul-address a {
+    font-weight: normal;
+}
+
+.ul-address a:hover {
+    color: rgb(250, 209, 38);
+}
+
+.ul-address li {
+    padding-right: 20px;
+    margin-bottom: 8px;
+    list-style: none;
+    color: rgb(8, 24, 31);
+}
+
+.ul-address i {
+    margin-left: 15px;
+    position: absolute;
+    left: 0;
+    color: #3eb0f7;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.contact-row {
+    margin: 100px 0 100px;
+}
+
+#contact-form {
+    margin: 0 auto;
+}
+
+#contact-form input {
+    position: relative;
+    padding: 5px 25px;
+    width: 100%;
+}
+
+#contact-form textarea {
+    position: relative;
+    padding: 10px 25px;
+    width: 100%;
+    height: 120px !important;
+}
+
+#contact-form .form-control {
+    border-radius: 0;
+    border: solid 1px #dadada;
+    background-color: #fff;
+    color: #333;
+    font-size: 1.2em;
+    height: 55px;
+}
+
+#contact-form .btn {
+    height: 55px;
+    width: 100%;
+    background-color: #3eb0f7;
+    color: #ffffff;
+    font-size: 17px !important;
+    line-height: 18px;
+    padding: 0 33px;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+#contact-form .btn:hover {
+    background-color: #1f96e0;
+    -webkit-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait) {
+    .more {
+        margin-bottom: 50px;
+    }
+
+    #intro {
+        padding: 30px 0 50px;
+    }
+
+    #intro h2, #feature-2 h2 {
+        font-weight: 150;
+        text-align: center;
+    }
+
+    #intro p, #feature-2 p {
+        text-align: center;
+    }
+
+    .btn-section {
+        text-align: center;
+    }
+
+    .row-feat {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape) {
+    .logo {
+        margin: 100px 0 30px 0;
+    }
+
+    .landing h1 {
+        margin: 60px 0 60px 0;
+    }
+
+    .landing-text {
+        margin: 60px 0 40px 0;
+    }
+
+    .more {
+        margin-bottom: 180px;
+    }
+
+    .header-phone {
+        margin-top: 125px;
+    }
+
+    .intro-pic {
+        margin-top: 100px;
+    }
+
+    .feature-img {
+        margin-top: 30px;
+    }
+
+    .feat-list {
+        margin-top: 10px;
+    }
+
+    .feat-list p {
+        font-size: 15px;
+    }
+}
+
+/* smart-phone ----------- */
+@media (max-width: 767px) {
+    .logo {
+        margin: 40px 0 30px 0;
+    }
+
+    .more {
+        margin-bottom: 40px;
+    }
+
+    #intro {
+        padding: 70px 0 70px;
+    }
+
+    #intro h2, #feature-2 h2 {
+        font-weight: 150;
+        text-align: center;
+    }
+
+    #intro p, #feature-2 p {
+        text-align: center;
+    }
+
+    .btn-section {
+        text-align: center;
+    }
+
+    .feat-list i {
+        padding-left: 40px;
+    }
+}
+
+/* iPhone 6Plus (landscape) ----------- */
+@media (max-width: 736px) {
+
+}
+
+/* iPhone 6 (landscape) ----------- */
+@media (max-width: 667px) {
+    .logo {
+        margin: 30px 0 30px 0;
+    }
+
+    .landing h1 {
+        font-size: 50px;
+        margin: 10px 0 25px 0;
+    }
+
+    .landing-text {
+        margin-top: 20px;
+    }
+
+    .action h2 {
+        margin-top: 70px;
+    }
+
+    .download-store {
+        padding: 20px 0 100px;
+    }
+}
+
+/* iPhone 5 (landscape) ----------- */
+@media (max-width: 568px) {
+    .logo {
+        margin: 15px 0 15px 0;
+    }
+
+    .landing h1 {
+        font-size: 40px;
+        margin: 20px 0 10px 0;
+    }
+
+    .landing-text p {
+        font-size: 16px !important;
+    }
+
+    #intro {
+        padding-top: 50px;
+    }
+
+    .feat-list i {
+        padding-left: 20px;
+    }
+
+    #feature-2 {
+        padding: 50px 0 70px;
+    }
+
+    #screenshot {
+        padding-top: 70px;
+    }
+
+    .screenshots {
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+    .action h2 {
+        margin: 50px 0 20px;
+    }
+
+    .download-text p {
+        line-height: 1.5;
+    }
+
+    .download-store {
+        padding: 10px 0 70px;
+    }
+}
+
+/* iPhone 4 (landscape) ----------- */
+@media (max-width: 480px) {
+    .feat-list i {
+        padding-left: 5px;
+    }
+
+    .action h2 {
+        font-size: 30px;
+    }
+}
+
+/* smart phone width: 360px ----------- */
+@media (max-width: 360px) {
+    #intro h2, #feature h2, #feature-2 h2 {
+        font-size: 30px;
+    }
+
+    .feat-list i {
+        padding-left: 0;
+    }
+
+    .appstorebutton {
+        margin-bottom: 15px;
+    }
+
+    .download-store li {
+        margin-left: 0;
+    }
+}
+
+/* iPhone 4/5 (portrait) ----------- */
+@media (max-width: 320px) {
+    .logo {
+        margin: 30px 0 20px 0;
+    }
+
+    .landing h1 {
+        margin: 20px 0 35px 0;
+    }
+
+    .more {
+        text-align: center;
+    }
+
+    .more p {
+        font-size: 14px;
+    }
+
+    .option {
+        padding: 3px;
+        min-width: 75px;
+        margin-right: 2px;
+    }
+
+    .btn-default {
+        font-size: 16px;
+        margin: 30px 0 10px;
+        padding: 15px 30px;
+        height: 35px;
+        border-radius: 80px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        margin: 30px 15px 10px 0;
+        padding: 15px 30px;
+        height: 35px;
+        border-radius: 80px;
+    }
+
+    .action h2 {
+        margin: 70px 0 20px;
+    }
+}
